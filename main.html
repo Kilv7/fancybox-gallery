@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+  />
+
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+  <!-- Підключення інших бібліотек -->
+  <script src="/libs/gsap.min.js" defer></script>
+  <script src="/libs/Draggable.min.js" defer></script>
+  <script src="/libs/InertiaPlugin.min.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header_centre">
+        <h2 id="openModal">Veronika Isakova</h2>
+    </div>
+  </header> 
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3></h3>
+      <p>
+        I am an artist and designer. Currently, I am studying 3D Motion Design and working as a multimedia object designer. 
+        <br>My passion for this field knows no bounds, and I am constantly striving to develop and enhance my skills and experience. 
+        <br>I believe that creativity and technology can create extraordinary visual experiences, and I am always seeking new opportunities for experimentation and self-expression. 
+        <br>My goal is to create works that inspire, impress, and change the perception of art in the digital world.
+      </p>
+        <img src="/img/Main_Photo.JPG" alt="Main_Photo"/>
+    </div>
+  </div>
+
+  <input type="radio" name="Pictures" id="check1" checked>
+  <input type="radio" name="Pictures" id="check2">
+  <input type="radio" name="Pictures" id="check3">
+  <input type="radio" name="Pictures" id="check4">
+
+  <div class="container">
+    <div class="top-content">
+      <label for="check1">All</label>
+      <label for="check2">Pretty girls</label>
+      <label for="check3">Other pictures</label>
+      <label for="check4">Video</label>
+    </div>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <!-- Зображення -->
+    <div class="item category-girls">
+      <a href="/img/girls/Girl-Desert.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Girl-Desert.jpg" alt="Girl-Desert">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Girl-on-bridge.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Girl-on-bridge.jpg" alt="Girl-on-bridge">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Girl-with-apple.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Girl-with-apple.jpg" alt="Girl-with-apple">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Photo-black-hair.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Photo-black-hair.jpg" alt="Photo-black-hair">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Photo-Girl.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Photo-Girl.jpg" alt="Photo-Girl">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Photo-lady.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Photo-lady.jpg" alt="Photo-lady">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Photo-Portrait.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Photo-Portrait.jpg" alt="Photo-Portrait">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Snake-girl.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Snake-girl.jpg" alt="Snake-girl">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Photo-white-hair.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Photo-white-hair.jpg" alt="Photo-white-hair">
+      </a>
+    </div>
+    <div class="item category-girls">
+      <a href="/img/girls/Photo-Smugla.jpg" data-fancybox="gallery">
+        <img src="/img/girls/Photo-Smugla.jpg" alt="Photo-Smugla">
+      </a>
+    </div>
+  
+    <!-- Картинки з категорії "Pictures" -->
+    <div class="item category-pictures">
+      <a href="/img/pictures/Butterfly.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Butterfly.jpg" alt="Butterfly">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Cicada.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Cicada.jpg" alt="Cicada">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Photo-hedgehog.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Photo-hedgehog.jpg" alt="Photo-hedgehog">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Photo-Mira.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Photo-Mira.jpg" alt="Photo-Mira">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Photo-Mushroom.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Photo-Mushroom.jpg" alt="Photo-Mushroom">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Photo.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Photo.jpg" alt="Photo">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Photo-Rose.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Photo-Rose.jpg" alt="Photo-Rose">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Eye.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Eye.jpg" alt="Eye">
+      </a>
+    </div>
+    <div class="item category-pictures">
+      <a href="/img/pictures/Krema-3d.jpg" data-fancybox="gallery">
+        <img src="/img/pictures/Krema-3d.jpg" alt="Krema-3d">
+      </a>
+    </div>
+  
+    <!-- Відео -->
+    <div class="item category-video">
+      <a href="/mp4/Mov3D.MP4" data-fancybox="gallery" data-type="video">
+        <video autoplay loop muted>
+          <source src="/mp4/Mov3D.MP4" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+      </a>
+    </div>
+    <div class="item category-video">
+      <a href="/mp4/Move-3D.MP4" data-fancybox="gallery" data-type="video">
+        <video autoplay loop muted>
+          <source src="/mp4/Move-3D.MP4" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+      </a>
+    </div>
+    <div class="item category-video video-4-5">
+      <a href="/mp4/Move-Fish3D.mp4" data-fancybox="gallery" data-type="video">
+        <video autoplay loop muted>
+          <source src="/mp4/Move-Fish3D.mp4" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="https://www.instagram.com/art_isakova?igsh=OHA3eWM5d2IydmI0" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://t.me/nikanikos" target="_blank" class="footer-link">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="mailto:nikaprihodko8@gmail.com" class="footer-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </footer>  
+
+  <button id="scrollToTopBtn" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>  
+  
+  <script src="/js/main.js"></script>
+
+</body>
+</html>

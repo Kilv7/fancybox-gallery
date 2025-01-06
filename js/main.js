@@ -39,6 +39,27 @@ window.addEventListener('click', (event) => {
   if (event.target === modal) toggleModal('remove');
 });
 
+// Отримуємо посилання на кнопку
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Функція для показу/приховування кнопки
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollToTopBtn.style.display = 'flex';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+});
+
+// Функція для прокручування вгору
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+
 
 
 
